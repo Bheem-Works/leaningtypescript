@@ -74,3 +74,11 @@
 
 // console.log(sayHello);
 
+function greet(name:string|null|undefined){
+    if (name)
+        return console.log(name)
+    else
+        console.log('hola')
+}
+
+greet(undefined)
