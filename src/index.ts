@@ -82,3 +82,19 @@ function greet(name:string|null|undefined){
 }
 
 greet(undefined)
+
+// optional change
+
+type Customer = {
+    birthday?:Date
+};
+
+function getCustomer(id:number | null | undefined){
+    return id === 0 ? null: {birthday: new Date()};
+}
+
+let customer = getCustomer(1)
+console.log(customer?.birthday?.getFullYear())
+
+let log : any = null;
+log?.('a')
