@@ -8,10 +8,13 @@ class Cat {
     this.name = name;
     this.event = event;
   }
-  showName() {
-    console.log(this.name);
+
+  description() {
+    console.log(this.name, this.event);
   }
 }
 
 const todayCat = new Cat("michi", "walking with us");
-todayCat.showName();
+const todayCatFood = new Cat("michi", "thupa");
+todayCatFood.description();
+todayCat.description();
